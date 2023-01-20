@@ -8,5 +8,7 @@
 * IRSA enabled
 * Both private and public ALB accepting traffic only over HTTPS
 * All ebs volumes are encrypted with KMS key
+* Uses github action
+* Authenticates with AWS using secure OIDC provider
 
 ![Architecture Diagram](PXL_20230120_055407868.jpg)
