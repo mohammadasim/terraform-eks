@@ -42,7 +42,7 @@ resource "aws_security_group" "private_alb" {
 resource "aws_security_group" "base_security_group" {
     name            = "node_base_sg"
     description     = "Allow traffic only from private and public alb sg"
-    vpc_id          = moudel.vpc.vpc_id
+    vpc_id          = module.vpc.vpc_id
     ingress {
         description   = "Allow http traffic from secure ALB only"
         from_port     = 80
